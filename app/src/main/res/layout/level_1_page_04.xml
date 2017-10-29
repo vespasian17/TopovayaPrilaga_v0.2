@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e5e5e5">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Бури и Бёр"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_1"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="\n \t Бури - (др.-исл. Buri, букв. 'родитель') - в скандинавской мифологии предок богов. Когда корова Аудумла лизала камни и лед, то постепенно на льдине показались волосы, а потом и человек по имени Бури. Он был очень красив, высок и силен. Значение имени Бури точно не определено, есть разные версии. Согласно одной, может означать «кладовая», согласно другой — «сын». «Бури» может означать «источник», «родитель».
+"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/buri"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:text="Аудумла вылизывает из камней предка богов Бури. Картина Альбигарда Н. Аудумла. Ок. 1790 г"
+                android:textAlignment="center"
+                android:gravity="top"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="\n \t Бёр (Borr или Burr) — в германо-скандинавской мифологии один из асов, сын первочеловека Бури и отец Одина. Упоминается в Младшей Эдде: «У Бури был сын по имени Бёр, который женился на женщине по имени Бестла, дочери великана Бёльторна; и у них родилось три сына: первый Один, второй Вили, третий Ве».
+\n \t Больше в Младшей Эдде Бёр не упоминается. Иногда упоминается в скандинавской поэзии как отец Одина. Роль Бёра в мифологии до конца не ясна и нет указаний на то, что ему поклонялись древние скандинавские язычники.
+"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

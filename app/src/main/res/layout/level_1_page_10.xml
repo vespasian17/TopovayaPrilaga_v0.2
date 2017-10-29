@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e5e5e5">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Родовое древо"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_1"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="\n \t Поскольку все то, что мы рассказывали Вам ранее могло показаться сложным для понимания, а в особенности сложная родословная - мы предлагаем вам укороченное родовое дерево, которое затрагивает тех, о ком мы вам только что рассказали."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tree"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:text="\n \t Вы можете видеть в середине первичный хаос Гинунгагап, который находится между первомиром льда и первомиром огня, породившие Имира и Аудумлу. Далее указаны их потомки; о Трудгельмире, Бельторне и его дочери Бестле мало описано в скандинавской мифологии, однако можно утверждать, что от них пошел весь род ётунов и асов.
+                \n \t Некоторые ветви родословной содержат всего лишь одно существо. Это не означает, что например Бельторн появился похожим образом, как появился Бури. В текстах описано, что Имир имел трех детей: два сына и дочь, однако известно имя только одного - шестиголового Трудгельмира. Эти трое великанов, составившие второе поколение инеистых турсов, значительно уступали ростом своему исполинскому — размером почти с целый мир — создателю. Насколько можно судить, Имир так и не проснулся по-настоящему — по крайней мере, ни говорить, ни ходить не стал; но его дети обладали и речью, и подвижностью, и разумом. Они чтили необъятное тело своего родителя и заботились о нем, насколько могли.
+                \n \t Трудгельмир и его брат сошлись со своей сестрой и так положили начало роду инеистых турсов. Первый ребенок этой троицы турсов получил имя Бергельмир и стал предводителем своего поколения — третьего.
+                \n \t Инеистые великаны также сходились с огненными, сыновьями и дочерьми Сурта. Они размножались неимоверно быстро, но вскоре были утоплены в крови их первооотца - Имира. Спастись смог только Бергельмир.
+\n \t Чтобы Вам было проще ориентироваться мы добавим полное родовое дерево, которое вы сможете посмотреть в любой момент"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

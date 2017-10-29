@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e5e5e5">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Имир"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="\n \t В германо-скандинавской мифологии первым живым существом во всём мире был Имир (он же Аургельмир или Бримир), самозародившийся из тепла во льдах ЭЛИГВАРА и выживший, питаясь молоком самозародившейся следом за ним коровы АУДУМЛЫ. Однажды во время сна он породил ещё троих великанов: шестиголового Трудгельмира и оставшихся безымянными мужчину и женщину, от которых пошёл род инеистых великанов. После убийства Имира асами (потомками Имира и Аудумлы, которых звали Один, Вилли и Ве) из ран Имира вытекло столько крови, что в ней утонули все великаны. Спасся лишь на ковчеге с детьми и женой великан Бергельмир («Ревущий как медведь»), сын Трудгельмира и внук Имира. От него-то и его безымянной жены и произошло новое племя «инеистых великанов» (ётунов, йотунов). Убив Имира, Асы (Один, Вилли и Ве) сотворили из него мир: из мяса — сушу, из крови — воды, из костей — горы, из зубов — скалы, из волос — лес, из мозга — облака, из черепа — небесный свод. Каждый из четырёх углов небесного свода новые боги свернули в форме рога и в каждый рог посадили по ветру: в северный — Нордри, в южный — Судри, в западный — Вестри и в восточный — Аустри.
+\n \t В северной мифологии убийство Имира — первое убийство, которое произошло в Ойкумене. С одной стороны — это злодеяние коварных братьев-асов, с другой стороны — первый шаг к прогрессу — созданию мира.
+\n \t В скандинавской мифологии нередко упоминаются случаи, когда тролли и ётуны со временем превращались в скалы, горы, холмы, становясь частью природного ландшафта. Истоки таких представлений, несомненно, лежат в мифе о создании из тела убитого Имира зримого, осязаемого мира.
+"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="
+                \n Имира плоть\n стала землей,\n кровь его — морем,\n кости — горами,\n череп стал небом,\n а волосы — лесом.\n\n Из век его Мидгард\n людям был создан\n богами благими;\n из мозга его\n созданы были\n темные тучи"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Младшая Эдда"
+                android:textAlignment="textEnd" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:text="Так Тремя Братьями был создан мир Мидгард, обычыный мир, мир людей, но он не был населен."/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e5e5e5">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Ваны"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_1"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="\n \t Ваны (др.-сканд. Vanir) — группа богов в германо-скандинавской мифологии, чей род уступил место культу асов, с которыми они то враждуют, то заключают союз.
+\n \t Ваны обитают в своей стране — Ванахейме, которая, согласно Саге об Инглингах, располагалась в Северном Причерноморье к западу от реки Ванаквисль (Дон).
+\n \t В первые годы от сотворения мира ваны, видимо, послали асам женщину Гулльвейг (что значит «сила золота»), живое воплощение алчности. Бог Один трижды пытался уничтожить её, и трижды она оживала. В отмщение за оскорбление, асы начали войну против ванов."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:text="\n В войско метнул Один копьё,\n это тоже свершилось\n  в дни первой войны;\n  рухнули стены\n  крепости асов,\n  ваны в битве\n  врагов побеждали."
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginEnd="16dp"
+                android:text="«Прорицание Вёльвы»\n строфа 24"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+android:text="\n \t Позже боги заключили мирный договор и обменялись друг с другом заложниками. С тех пор некоторые ваны — Фрейр, Фрейя и Ньёрд — поселились в Асгарде, а асы Хёнир и Мимир живут с ванами.
+\n \t Возможно вам покажется, что этого мало, автор халтурит, о группах богов можно было написать подробнее, но я скажу Вам, что можно было так сделать.. однако намного лучше раскрывать историю связывая ее с конкретными именами богов, история которых будет раскрыта в дальнейшем.
+"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

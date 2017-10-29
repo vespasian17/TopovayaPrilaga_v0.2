@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e5e5e5">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Ётуны"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_1"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="\n \t Ётуны или йόтуны (др.-сканд. Jötunn — «обжора») в германо-скандинавской мифологии — великаны (турсы) семейства Гримтурсенов, дети Имира. Ётуны жили в Ётунхейме, отличались силой и ростом и были противниками асов и людей. Примечательно, что великанами ётуны являлись только в восприятии людей — асы не уступали ётунам ростом (об этом можно судить по текстам некоторых легенд и старинным иллюстрациям к ним).
+\n \t С одной стороны, ётуны — это древние исполины, одни из первых обитателей мира, по времени предшествующие богам и людям. С другой — это жители холодной каменистой страны на северной и восточной окраинах земли (Ётунхейм, Утгард), представители стихийных демонических природных сил, враги асов. Они во что бы то ни стало стремились отнять у асов жён — богинь Фрейю, Идунн, и волшебные атрибуты — молот Тора, молодильные яблоки Идунн, кольцо Драупнир и т. д. В конце концов ётуны были побеждены асами, возглавляемыми Одином.
+\n \t По древнескандинавским легендам (Старшая и Младшая Эдда, Перебранка Локи, Речи Вафтруднира, Мёд поэзии и др.) ётуны отличались чрезвычайно злобным характером и, хотя были довольно простодушными, в отличие от искушённых и хитрых асов, некоторые из них (Вафтруднир, Мимир, Эгир) были хранителями древней мудрости. Однако большинство имело атавистичные, либо часто просто чудовищные черты (родство с чудовищами, многоглавость как у Трудгельмира), что символизировало дикую природу ётунов.
+\n \t Считалось, что именно ётуны вызывают бури, горные обвалы и прочие стихийные бедствия.
+\n \t В более поздних (после принятия скандинавами христианства) легендах ётуны стали отождествляться с троллями.
+"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

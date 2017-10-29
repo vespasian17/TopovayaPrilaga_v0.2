@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e5e5e5">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Аудумла"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_1"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="\n \t В древнескандинавской мифологии корова Аудумла – одно из первых живых существ, появившихся в мире. При этом более корректный вариант произношения ее имени, транскрибированный на русский язык, звучит как Аудумбла, потому что оригинальное написание слова выглядит следующим образом – «Audhumbla».
+\n \t Согласно наиболее популярной версии слово «Аудумбла» происходит от древнескандинавских основ «audr», что значит «богатство» и «humala», что можно перевести как «безрогая». При этом понятие «богатство» в древнескандинавском языке действительно семантически взаимозаменяемо с понятием «корова» (очевидно потому, что скот являлся признаком достатка). Факт «безрогоски» скота подтверждается тем, что в работе «О происхождении германцев» римский историк Тацит пишет, что у племен Северной Европы домашний скот действительно лишен рогов
+\n \t Корова Аудумбла в «Младшей Эдде» Снорри Стурлусона упоминается лишь единожды, практически в самом начале части «Видение Гюльви». На вопрос Ганглери о том, где жил первый инеистый великан Имир и чем он питался, Один ответил, что «когда растаял иней» (причем неясно, о каком именно явлении идет речь, вероятно – имеется в виду Эливагар, где родился и сам Имир), из оттаявшей воды появилась корова Аудумла. Далее Высокий поясняет, что из вымени коровы текли четыре молочные реки, из которых и питался великан Имир."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/audumla"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Имир питается молочными реками Аудумлы"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="\n \t На последующий вопрос Ганглери о том, чем же питалась сама Аудумла, Высокий отвечает, что корова лизала покрытые именем куски соли (многие исследователи склонны полагать, что данная метафора обозначает звезды). В итоге, к концу первого дня (вероятно, речь идет вовсе не о земных сутках) корова Аудумла «вылизала» из куска соли волосы. На второй день кроме волос появилась голова, а на третий день из соляного куска возник «человек», великан Бури, дед трех первых асов – Одина, Вили и Вё.
+\n \t Неизвестно, что стал с Аудумлой впоследствии. Теоретически она погибла в крови Имира, ведь, как сказано в эддических текстах, тогда погибли все, кроме Одина, Вили, Ве и прародителя ётунов Бергельмир."/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

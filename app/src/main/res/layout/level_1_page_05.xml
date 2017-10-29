@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e5e5e5">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Кто такие Асы?"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_1"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="\n \t А́сы (др.-сканд. м. р. ед. ч. áss) — в германо-скандинавской мифологии основная группа богов. Верховным богом и вождём асов является Один. рародителем Асов является Бури, о котором говорилось ранее.
+\n \t Живут в Асгарде  - мире богов-асов.
+\n \t «Младшая Эдда» перечисляет 12 богов асов (Один, Тор, Тюр, Браги, Ньёрд, Хеймдалль, Хёд, Видар, Али (или Вали), Улль, Форсети, Локи) и 14 богинь (Фригг, Сага, Эйр, Гевьон, Фулла, Фрейя (приёмная от ванов), Съёвн, Ловн, Вёр, Вер, Сюн, Хлин, Снотра, Гна), позже также упоминаются богини Соль, Биль, Ёрд и Ринд.
+\n \t Не стоит запоминать имена каждого, данная статья создана для того, чтобы вы могли понимать кто такие асы, поскольку название этой группы богов будет часто упоминаться в дальнейшем.
+\n \t Со временем мы раскроем историю каждого бога, места и существа, которые будут упоминаться. Поскольку германо-скандинавская мифология имеет сложную структуру, мы попытаемся рассказывать обо всем по порядку, начиная с основных персонажей, заканчивая второстепенными.
+"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
