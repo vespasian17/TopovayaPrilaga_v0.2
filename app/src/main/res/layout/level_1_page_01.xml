@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
     android:background="#e5e5e5">
 
     <ScrollView
@@ -17,19 +17,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-        <TextView
+        <solutions.vladik.topovayaprilaga.TextViewPlus
             android:id="@+id/title_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
+            android:textSize="50dp"
             android:gravity="center"
             android:layout_marginTop="8dp"
             android:text="Предыстория"
+            foo:customFont="runic.ttf"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/title_1"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
