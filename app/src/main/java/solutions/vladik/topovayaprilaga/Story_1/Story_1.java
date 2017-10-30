@@ -1,5 +1,6 @@
 package solutions.vladik.topovayaprilaga.Story_1;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -7,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 import com.mikepenz.materialdrawer.Drawer;
@@ -36,9 +38,16 @@ public class Story_1 extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        //Получение выбранного раздела из содержания
+        Intent intent = getIntent();
+        String et = intent.getStringExtra("number");
+        int i = Integer.parseInt(et.toString());
+        Log.d("qweqwe", intent.getStringExtra("number"));
+
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
-
+        //Выставление раздела в соответствии с выбранным в содержании
+        viewPager.setCurrentItem(i);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(viewPager);

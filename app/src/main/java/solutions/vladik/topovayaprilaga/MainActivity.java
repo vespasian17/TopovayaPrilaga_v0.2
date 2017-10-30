@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import solutions.vladik.topovayaprilaga.Story_1.Story_1;
+import solutions.vladik.topovayaprilaga.Story_1.Content;
 
 public class MainActivity extends AppCompatActivity {
     String ATTRIBUTE_NAME_TEXT = "text";
@@ -39,17 +39,21 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(Color.WHITE);
-        toolbar.setTitle("KACHESTVO");
+        toolbar.setTitle("Скандинавские Боги");
         setSupportActionBar(toolbar);
         navView();
         //ActionBar actionBar = getSupportActionBar();
         //actionBar.setDisplayHomeAsUpEnabled(true);
 
-        names.add("Story-1"); names.add("Story-2");
-        description.add("Мы начинаем первую историю, поехали!");
-        description.add("Мы начинаем первую историю, поехали!");
-        img_id.add("https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png");
-        img_id.add("https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png");
+        names.add("Часть 1"); names.add("Часть 2"); names.add("Часть 3"); names.add("Часть 4");
+        description.add("Зарождение жизни");
+        description.add("Расцвет асов");
+        description.add("В разработке");
+        description.add("В разработке");
+        img_id.add("drawable/f.jpg");
+        img_id.add("drawable/u.jpg");
+        img_id.add("drawable/t.jpg");
+        img_id.add("drawable/a.jpg");
 
 
         ListView lv = (ListView) findViewById(R.id.lv);
@@ -80,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (position){
                     case 0:
-                        Intent intent = new Intent(MainActivity.this, Story_1.class);
+                        Intent intent = new Intent(MainActivity.this, Content.class);
                         startActivity(intent);
                 }
 

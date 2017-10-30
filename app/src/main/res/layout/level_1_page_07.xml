@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#e5e5e5">
+    xmlns:foo="http://schemas.android.com/apk/res-auto">
 
     <ScrollView
         android:id="@+id/SCROLLER_ID"
@@ -17,14 +16,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <TextView
+            <solutions.vladik.topovayaprilaga.TextViewPlus
                 android:id="@+id/title_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
+                android:textSize="50dp"
                 android:gravity="center"
                 android:layout_marginTop="8dp"
                 android:text="Ётуны"
+                foo:customFont="runic.ttf"
                 />
             <TextView
                 android:layout_width="match_parent"
