@@ -5,4 +5,5 @@
     <color name="colorAccent">#000000</color>
     <color name="selectedNaw">#78909c</color>
     <color name="bacgroundColor">#757575</color>
+    <color name="bacgroundEpigraph">#616161</color>
 </resources>

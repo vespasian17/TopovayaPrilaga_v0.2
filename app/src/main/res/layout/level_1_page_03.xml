@@ -38,18 +38,21 @@
 \n \t Корова Аудумбла в «Младшей Эдде» Снорри Стурлусона упоминается лишь единожды, практически в самом начале части «Видение Гюльви». На вопрос Ганглери о том, где жил первый инеистый великан Имир и чем он питался, Один ответил, что «когда растаял иней» (причем неясно, о каком именно явлении идет речь, вероятно – имеется в виду Эливагар, где родился и сам Имир), из оттаявшей воды появилась корова Аудумла. Далее Высокий поясняет, что из вымени коровы текли четыре молочные реки, из которых и питался великан Имир."
                 android:textAlignment="viewStart"
                 android:textAllCaps="false" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/audumla"
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:textStyle="bold"
                 android:text="Имир питается молочными реками Аудумлы"
                 android:textAlignment="center" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
