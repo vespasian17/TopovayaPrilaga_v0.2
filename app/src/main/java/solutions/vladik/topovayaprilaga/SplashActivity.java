@@ -3,8 +3,7 @@ package solutions.vladik.topovayaprilaga;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.os.Handler;
 
 public class SplashActivity extends Activity {
 
@@ -13,14 +12,14 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        Button btn = findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener() {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), MainActivity.class);
+            public void run() {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 finish();
             }
-        });
+        }, 2000);
+
     }
 }
