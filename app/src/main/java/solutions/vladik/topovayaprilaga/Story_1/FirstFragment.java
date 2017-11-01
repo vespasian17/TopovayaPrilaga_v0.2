@@ -1,7 +1,6 @@
 package solutions.vladik.topovayaprilaga.Story_1;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.SpannableString;
@@ -13,8 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import solutions.vladik.topovayaprilaga.MainActivity;
 import solutions.vladik.topovayaprilaga.R;
+import solutions.vladik.topovayaprilaga.TextJustification;
 
 /**
  * Created by tim on 28.10.17.
@@ -25,7 +24,6 @@ public class FirstFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -33,8 +31,8 @@ public class FirstFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         final View v = inflater.inflate(R.layout.level_1_page_01, container, false);
-        TextView tv = (TextView) v.findViewById(R.id.tv_1_1);
 
+        TextView tv = (TextView) v.findViewById(R.id.tv_1_1);
         //Фулл текст
         SpannableString ss = new SpannableString("\n \t В начале времен не были в мире ни песка, ни моря, ни волн холодных; земли еще не было, не было небосвода. И только зияла огромная черная бездна ГИНУНГАГАП, или Мировая бездна. К северу от нее был Нифльхейм, Темный мир. Оттуда шел холод и свирепая непогода. А к югу от Мировой бездны располагался мир жара и огня Муспелльхейм. С севера Мировая бездна заполнялась льдом и инеем, а с юга в нее залетали искры из Муспелльхейма. Когда же иней и теплый воздух встретились, иней стал таять, и капли, стекавшие вниз, породили первое существо - великана Имира.\n" +
                 "    \n \t Но стоит отметить, что по древнескандинавским поверьям Огненные великаны были раньше Имира, однако именно из тела Имира и был сотворен мир. Возможно поэтому в разных писаниях Имира называют первым существом, древним прародителем всех.\n" +
@@ -62,10 +60,12 @@ public class FirstFragment extends Fragment {
         ss.setSpan(span1, 148, 158, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         ss.setSpan(span2, 316, 329, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-
         tv.setText(ss);
         tv.setMovementMethod(LinkMovementMethod.getInstance());
+        //Выравнивание
+        TextJustification.justify(tv);
 
         return v;
     }
+
 }
