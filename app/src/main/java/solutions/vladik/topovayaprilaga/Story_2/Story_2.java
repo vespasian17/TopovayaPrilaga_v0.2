@@ -1,13 +1,15 @@
-package solutions.vladik.topovayaprilaga;
+package solutions.vladik.topovayaprilaga.Story_2;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
@@ -16,89 +18,41 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import solutions.vladik.topovayaprilaga.R;
+import solutions.vladik.topovayaprilaga.ViewPagerAdapter;
 
-import solutions.vladik.topovayaprilaga.Story_1.Content;
-import solutions.vladik.topovayaprilaga.Story_2.Content_2;
-
-public class MainActivity extends AppCompatActivity {
-    String ATTRIBUTE_NAME_TEXT = "text";
-    String ATTRIBUTE_NAME_TEXT2 = "texts";
-    String TAG_IMAGE = "image";
+public class Story_2 extends AppCompatActivity {
 
     Toolbar toolbar;
-    ArrayList<String> names = new ArrayList<>();
-    ArrayList<String> description = new ArrayList<>();
-    ArrayList<String> img_id = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_story_2);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(Color.WHITE);
-        toolbar.setTitle("Скандинавские Боги");
+        toolbar.setTitle("KACHESTVO");
         setSupportActionBar(toolbar);
-        navView();
-        //ActionBar actionBar = getSupportActionBar();
-        //actionBar.setDisplayHomeAsUpEnabled(true);
+        setupNavView();
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
-        names.add("Часть 1"); names.add("Часть 2"); names.add("Часть 3"); names.add("Часть 4");
-        description.add("Зарождение жизни");
-        description.add("Расцвет асов");
-        description.add("В разработке");
-        description.add("В разработке");
-        img_id.add("drawable/f.jpg");
-        img_id.add("drawable/u.jpg");
-        img_id.add("drawable/t.jpg");
-        img_id.add("drawable/a.jpg");
+        //Получение выбранного раздела из содержания
+        Intent intent = getIntent();
+        String et = intent.getStringExtra("number");
+        int i = Integer.parseInt(et.toString());
+        Log.d("qweqwe", intent.getStringExtra("number"));
 
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager_2);
+        setupViewPager(viewPager);
+        //Выставление раздела в соответствии с выбранным в содержании
+        viewPager.setCurrentItem(i);
 
-        ListView lv = (ListView) findViewById(R.id.lv);
-
-        ArrayList<Map<String, Object>> data = new ArrayList<Map<String, Object>>(names.size());
-        Map<String, Object> model;
-        for (int i = 0; i < names.size(); i++) {
-            model = new HashMap<String, Object>();
-            model.put(ATTRIBUTE_NAME_TEXT, names.get(i));
-            model.put(ATTRIBUTE_NAME_TEXT2, " " + description.get(i));
-            //model.put(TAG_IMAGE, img_id.get(i));
-
-            data.add(model);
-        }
-
-        MyListAdapter adapter =
-                new MyListAdapter(
-                        this,
-                        data,
-                        R.layout.item,
-                        new String[]{ATTRIBUTE_NAME_TEXT,ATTRIBUTE_NAME_TEXT2},
-                        new int[]{R.id.tv1,R.id.tv2});
-        lv.setAdapter(adapter);
-
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-
-                switch (position){
-                    case 0:
-                        Intent intent = new Intent(MainActivity.this, Content.class);
-                        startActivity(intent);
-                        break;
-                    case 1:
-                        Intent intent2 = new Intent(MainActivity.this, Content_2.class);
-                        startActivity(intent2);
-                        break;
-                }
-
-            }
-        });
-
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout);
+        tabLayout.setupWithViewPager(viewPager);
     }
-    public void navView(){
+    public void setupNavView(){
         Drawer result = new DrawerBuilder()
                 .withActivity(this)
                 .withToolbar(toolbar)
@@ -164,5 +118,21 @@ public class MainActivity extends AppCompatActivity {
                                 .withIcon(getResources().getDrawable(R.drawable.library_music))
                 )
                 .build();
+    }
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new Fragment_2_2(), "Качество");
+        /*adapter.addFragment(new SecondFragment(), "Страница");
+        adapter.addFragment(new Fragment_3(), "Уверенность");
+        adapter.addFragment(new Fragment_4(), null);
+        adapter.addFragment(new Fragment_5(), null);
+        adapter.addFragment(new Fragment_6(), null);
+        adapter.addFragment(new Fragment_7(), null);
+        adapter.addFragment(new Fragment_8(), null);
+        adapter.addFragment(new Fragment_9(), null);
+        adapter.addFragment(new Fragment_10(), null);
+        adapter.addFragment(new Fragment_11(), null);
+        adapter.addFragment(new Fragment_12(), null);*/
+        viewPager.setAdapter(adapter);
     }
 }

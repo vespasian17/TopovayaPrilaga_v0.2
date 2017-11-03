@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Story_1.Story_1" />
-        <activity android:name=".Story_1.Content"></activity>
+        <activity android:name=".Story_1.Content" />
+        <activity android:name=".Story_2.Content_2" />
+        <activity android:name=".Story_2.Story_2"></activity>
     </application>
 
 </manifest>
